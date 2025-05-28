@@ -1,0 +1,48 @@
+{
+  "cars": [
+    {
+      "id": "1",
+      "model": "Peugeot 208",
+      "year": 2023,
+      "cover": "./images/c4173f1e-8ffc-486f-b94b-96be0f338f66.png",
+      "description": "Diesel, 5 portes, GPS, AutoRadio, Forfait 1000 km (0,5€/km supplémentaire).",
+      "agence": "Agence Paris",
+      "price": "999",
+      "color": "Noir métallisé",
+      "transmission": "Automatique"
+    },
+    {
+      "id": "2",
+      "model": "Ford Fiesta",
+      "year": 2023,
+      "cover": "./images/09bca341-66df-4300-8276-490865325617.png",
+      "description": "Diesel, 5 portes, GPS, AutoRadio, Forfait 1000 km (0,5€/km supplémentaire).",
+      "agence": "Agence Nantes",
+      "price": "999",
+      "color": "Bleu métallisé",
+      "transmission": "Automatique"
+    },
+    {
+      "id": "3",
+      "model": "Opel Astra",
+      "year": 2023,
+      "cover": "./images/02c31279-46a9-4ff4-bf8a-242f86c26496.png",
+      "description": "Diesel, 5 portes, GPS, AutoRadio, Forfait 1000 km (0,5€/km supplémentaire).",
+      "agence": "Agence La Rochelle",
+      "price": "999",
+      "color": "Blan nacré",
+      "transmission": "Automatique"
+    },
+    {
+      "id": "4",
+      "model": "Audi A4",
+      "year": 2023,
+      "cover": "./images/2a39b392-6dc9-478c-8c6a-990c150176fd.png",
+      "description": "Diesel, 5 portes, GPS, AutoRadio, Forfait 1000 km (0,5€/km supplémentaire).",
+      "agence": "Agence Toulouse",
+      "price": "999",
+      "color": "Gris métallisé",
+      "transmission": "Automatique"
+    }
+  ]
+}

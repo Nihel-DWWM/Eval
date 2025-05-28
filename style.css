@@ -1,13 +1,15 @@
-.pres{
+.accueil{
 
     background-image: url("./images/f927ae20-2779-4191-9330-5ccb32ce2f05.jpg");
     background-size: cover;
     background-position: center;
-    height: 600px;
+    height:500px;
+    padding-top: 40px;
     color: white;
     text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
     position: relative;
-    z-index: 0;
+    /* z-index: 0; */
+    overflow: hidden;
    
 
 }
@@ -15,7 +17,7 @@
 .navbar{
 
    
-
+    position: absolute;
     z-index: 1;
 }
 
@@ -24,6 +26,37 @@ body{
     margin: 0px;
     padding: 0px;
     width: 100%;
-    height: 100vh
-
+    height: 100vh;
+    box-sizing: border-box; 
+  
 }
+
+.barre{
+    
+
+    position: absolute
+
+}  
+form {
+    background-color: rgba(234, 236, 240, 0.6); /* Couleur avec transparence */
+    border-radius: 0;
+}
+
+
+form input,
+form select,
+form button {
+    background-color: #fff; /* ou tout autre couleur non transparente */
+}
+
+#navbarMenu {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cursor-pointer {
+  cursor: pointer !important;
+}
+
+
+
+
