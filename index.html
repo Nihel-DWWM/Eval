@@ -47,13 +47,17 @@
     <p class="lead">Location de voiture 24h/24 et 7j/7</p>
 
     <!-- Barre positionnée en bas -->
-    <div class="position-absolute bottom-0 start-50 translate-middle-x mb-5 w-100 px-3">
-      <form class="row g-2 justify-content-center d-flex flex-wrap py-1 mx-auto mx-md-5 mx-lg-auto align-items-center" style="max-width: 900px;">
+    <div class="position-absolute bottom-0 start-50 translate-middle-x mb-5 w-100 px-3 ">
+      <form class="row g-2 justify-content-center align-items-center d-flex flex-wrap py-1 mx-auto mx-md-5 mx-lg-auto align-items-center" style="max-width: 900px;">
         
         <!-- Adresse -->
         <div class="col-12 col-lg-3 col-md-4">
           <select class="form-select">
             <option>Adresse de départ</option>
+            <option>Agence Paris</option>
+            <option>Agence Nantes</option>
+            <option>Agence La Rochelle</option>
+            <option>Agence Toulouse</option>
           </select>
         </div>
 
@@ -69,6 +73,7 @@
 
         <!-- Bouton -->
         <div class="col-12 col-lg-3 col-md-12 d-flex ">
+          
           <button type="submit" class="btn btn-success w-100 h-100 rounded-0">Valider ma recherche</button>
         </div>
 
@@ -77,181 +82,31 @@
   </div>
  </section>
 
- 
+
 
 </section>
 
 
 
 <section class="container-fluid my-5">
-  <div class="row justify-content-center">
-    <div class="col-lg-8 col-md-10">
+  <div class="row justify-content-center" id="resultats">
+    <!-- <div class="col-lg-8 col-md-10">
       <div class="d-flex justify-content-between align-items-center mb-4">
-        <h4 class="mb-0">7 résultats</h4>
+        <h4 class="mb-0 nbr-resultats"></h4>
         <select class="form-select w-auto">
           <option>Prix croissant</option>
         </select>
       </div>
-    </div>
+    </div> -->
   </div>
 
-  <div class="container" id="liste">
-  <!-- <div class="row justify-content-center">
-    <div class="col-lg-8 col-md-10">
-      <div class="d-flex flex-wrap align-items-center justify-content-between mb-5 w-100 gap-3"> -->
-        
-        <!-- Image et navigation -->
-        <!-- <div class="d-flex align-items-center justify-content-center col-md-5 col-lg-4">
-          <button class="btn btn-link text-dark fs-4 p-0">
-           <i class="fas fa-chevron-left"></i>
-          </button>
-          <img src="./images/c4173f1e-8ffc-486f-b94b-96be0f338f66.png" class="img-fluid mx-3" style="max-width: 250px;" alt="Peugeot 208">
-          <button class="btn btn-link text-dark fs-4 p-0">
-           <i class="fas fa-chevron-right"></i>
-          </button>
-        </div> -->
-
-        <!-- Détails + bouton -->
-        <!-- <div class="d-flex flex-column justify-content-center align-items-center align-items-lg-start col-md-6 col-lg-6"> -->
-          
-          <!-- Détails visibles seulement à partir de lg -->
-          <!-- <div class="d-none d-lg-block">
-            <h5 class="mb-1">Peugeot 208</h5>
-            <p class="mb-1">Diesel, 5 portes, GPS, AutoRadio, Forfait 1000 km (0,5€/km supplémentaire).</p>
-            <p class="mb-3"><strong>999 €</strong> – Agence de Paris</p>
-          </div> -->
-
-          <!-- Bouton toujours visible, sans modifier sa taille -->
-          <!-- <div class="mt-2">
-
-            <a href="#" class="btn btn-success text-white text-decoration-none cursor-pointer">Réserver et Payer</a>
-          </div>
-
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-
-
-  <div class="row justify-content-center">
-    <div class="col-lg-8 col-md-10">
-      <div class="d-flex flex-wrap align-items-center justify-content-between mb-5 w-100 gap-3"> -->
-        
-        <!-- Image et navigation -->
-        <!-- <div class="d-flex align-items-center justify-content-center col-md-5 col-lg-4">
-          <button class="btn btn-link text-dark fs-4 p-0">
-           <i class="fas fa-chevron-left"></i>
-          </button> -->
-
-
-          <!-- <button class="btn btn-link text-dark fs-3 px-2">&#8249;</button> -->
-          <!-- <img src="./images/c4173f1e-8ffc-486f-b94b-96be0f338f66.png" class="img-fluid mx-3" style="max-width: 250px;" alt="Peugeot 208">
-          <button class="btn btn-link text-dark fs-4 p-0">
-           <i class="fas fa-chevron-right"></i>
-          </button>
-        </div> -->
-
-        <!-- Détails + bouton -->
-        <!-- <div class="d-flex flex-column justify-content-center align-items-center align-items-lg-start col-md-6 col-lg-6"> -->
-          
-          <!-- Détails visibles seulement à partir de lg -->
-          <!-- <div class="d-none d-lg-block">
-            <h5 class="mb-1">Peugeot 208</h5>
-            <p class="mb-1">Diesel, 5 portes, GPS, AutoRadio, Forfait 1000 km (0,5€/km supplémentaire).</p>
-            <p class="mb-3"><strong>999 €</strong> – Agence de Paris</p>
-          </div> -->
-
-          <!-- Bouton toujours visible, sans modifier sa taille -->
-          <!-- <div class="mt-2">
-            <a href="#" style="cursor: pointer;" class="btn btn-success text-white text-decoration-none">Réserver et Payer</a>
-          </div>
-
-        </div>
-
-      </div>
-    </div>
-  </div> -->
-
-  </div>
-
-
-
-
+  <div class="container" id="liste"></div>
 
 
 
 
 </section>
 
-<!-- <section class="container-fluid my-5 ">
-
-    <div class="row d-flex justify-content-center">
-
-     <div class="col-lg-8 col-md-10 ">
-
-      <div class=" d-flex  justify-content-between align-items-center mb-4">
-      <h4>7 résultats</h4>
-      <select class="form-select w-auto">
-        <option>Prix croissant</option>
-      </select>
-     </div>
-
-
-     </div>
-
-    </div>
-
-    <div class="row d-flex justify-content-center">
-
-     <div class="col-md-10 col-lg-8">
-
-
-      <div class="d-flex align-items-center justify-content-between mb-5 g-lg-1  w-100">
-
-           <div class=" col-md-4 d-flex justify-content-between">
-
-            <button class="btn btn-link text-dark fs-3 mx-0">&#8249;</button>
-            <img src="./images/c4173f1e-8ffc-486f-b94b-96be0f338f66.png" class="img-fluid mx-3" style="max-width: 400px;" alt="Peugeot 208">
-            <button class="btn btn-link text-dark fs-3 mx-0">&#8250;</button>
-           </div>
-    
-      
-          <div class="col-lg-5 col-md-6 d-flex align-items-center justify-content-center flex-wrap">
-
-            <div class="d-none d-lg-block">
-
-            <h5>Peugeot 208</h5>
-            <p class="fs-6">Diesel, 5 portes, GPS, AutoRadio, Forfait 1000 km (0,5/km supplémentaire).</p>
-            <p><strong>999 €</strong> – Agence de Paris</p>
-
-            </div>
-
-            <div>
-
-            <button class="btn btn-success">Réserver et Payer</button>
-
-            </div>
-            
-           
-          </div>
-
-          
-
-
-
-
-     
-      </div>
-
-     </div>
-
-
-    </div>
-
-
-</section> -->
 
 
 <footer class="bg-light py-4 border-top">
